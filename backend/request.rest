@@ -1,0 +1,31 @@
+GET http://localhost:5000/users
+
+###
+GET http://localhost:5000/users/64807067d40ed91c61f22bbd
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "judulBuku": "Hujan",
+    "penulis": "TereLiye",
+    "hargaBuku": "5000"
+}
+
+###
+
+PATCH http://localhost:5000/users/64806f7e7ebbd5df5db1d5ab
+Content-Type: application/json
+
+{
+    "judulBuku": "Bumi",
+    "penulis": "TereLiye",
+    "hargaBuku": "83000"
+}
+
+###
+GET http://localhost:5000/users/64806f7e7ebbd5df5db1d5ab
+
+###
+DELETE http://localhost:5000/users/64807056c170a4dc382939f5
